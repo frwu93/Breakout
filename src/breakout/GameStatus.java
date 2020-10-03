@@ -7,12 +7,16 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+/**
+ * The GameStatus class contains all static constants needed to set up and run the game.
+ */
+
 public final class GameStatus {
 
   public static final int WINDOWHEIGHT = 600;
   public static final int WINDOWWIDTH = 500;
   public static final Paint BACKGROUND = Color.web("#f0f8ff");
-  public static final String TITLE = "Breakout"; //TODO: CHANGE LATER
+  public static final String TITLE = "Breakout";
   public static final int FRAMES_PER_SECOND = 60;
   public static final double SECOND_DELAY = 1.0 / FRAMES_PER_SECOND;
   public static final int RADIUS = 10;
@@ -40,4 +44,6 @@ public final class GameStatus {
   public static final int POWER_UP_TIMER = 10 * FRAMES_PER_SECOND;
   public static final int START_SCORE = 0;
   public static final int STARTING_LIVES = 3;
+  public static final double PADDLE_INCREASE_FACTOR = 1.5;
+  public static final double SLOW_DOWN_FACTOR = 0.5;
 }
